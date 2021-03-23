@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Website information and stylesheets. -->
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/reset.css">
@@ -9,92 +10,101 @@
 </head>
 
 <body>
-    
+    <!-- Header and navigation links.  -->
     <Header>
-
-            <h1>Annie Mascarello</h1>
-            
+        <h1>Annie Mascarello</h1>
         <nav>
-            <a class ="link" href="">About Me</a>
-            <a class ="link" href="">Work</a>
-            <a class ="link" href="">Contact Me</a>
+            <a class ="link" href="#about">About Me</a>
+            <a class ="link" href="#work">Work</a>
+            <a class ="link" href="#contact">Contact Me</a>
             <a class ="link" href="">Resume</a>
         </nav>
-
-
     </Header>
 
+    <!-- Large banner image folloing the header.  -->
+    <div class="banner">
+        <h2>Welcome to my portfolio!</h2>
+    </div>
 
-        <div class="banner">
-            <h2>Cool Subtitle Here!</h2>
-        </div>
-
+    <!-- Main content begins. -->
     <main>
-
+        <!-- 'About Me' section including header and content begins. -->
         <section>
-
             <div class="content-header">
                 <h3>About<br>Me</h3>
             </div>
 
-            <div class="content">
-
+            <div class="content" id="about">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. </p>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. </p>
-
             </div>
-   
         </section>
 
+        <!-- 'Work'/projects section including corresponding header and content begins. -->
         <section>
-    
             <div class="content-header">
                 <h3>Work</h3>
             </div>
 
-            <div class="content">
-
+            <div class="content" id="work">
+                <!-- Larger project image. -->
                 <div class="projects" id="larger">
-                    <h3></h3>
+                    <!-- <img src="assets/images/surfing.jpg"> -->
+                    <div class="project-info" id="one">
+                        <h5>Project Name</h5>
+                        <p>Description.</p>
+                    </div>
+                </div>
+
+                <!-- Regular sized project images begin. -->
+                <div class="projects">
+                    <!-- <img src="./assets/images/led.jpg"> -->
+
+                    <div class="project-info">
+                        <h5>Project Name</h5>
+                        <p>Description.</p>
+                    </div>
                 </div>
 
                 <div class="projects">
-                    <h3></h3>
-                </div>
-            
-                <div class="projects">
-                    <h3></h3>
-                </div>
-
-                <div class="projects">
-                    <h3></h3>
+                    <!-- <img src="assets/images/calc.jpg"> -->
+                    <div class="project-info">
+                        <h5>Longer Project Name</h5>
+                        <p>Description.</p>
+                    </div>
                 </div>
 
                 <div class="projects">
-                    <h3></h3>
+                    <!-- <img src="assets/images/puzzle.jpg"> -->
+                    <div class="project-info">
+                        <h5>Project Name</h5>
+                        <p>Description.</p>
+                    </div>
                 </div>
 
-            </div>
-
+                <div class="projects">
+                    <!-- <img src="assets/images/run.jpg"> -->
+                    <div class="project-info">
+                        <h5>Project Name</h5>
+                        <p>Description.</p>
+                    </div>
+                </div>
         </section>
 
+        <!-- 'Contact Me' section including corresponding header and content begins. -->
         <section>
-
-            <div class="content-header">
-                <h3>Contact</h3>
+            <div class="content-header" id="contact">
+                <h3>Contact<br>Me</h3>
             </div>
 
-            <div class="content">
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis voluptas odit totam blanditiis, culpa ipsam iure adipisci est sunt eligendi eius. Nulla sequi laboriosam non dignissimos possimus ipsa sed. </p>
-
+            <div class="content" id="contact-me">
+                <h4>407.962.6635</h4><br>
+                <h4>amfm0793@gmail.com</h4><br>
+                <h4>GitHub</h4><br>
+                <h4>Twitter</h4><br>
+                <h4>Spotify</h4>
             </div>
-
         </section>
-            
-
     </main>
-
 </body>
 </html>

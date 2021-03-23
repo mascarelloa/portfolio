@@ -5,7 +5,14 @@ body {
     margin:0;
 }
 
+p {
+    color:#3c4f6a;
+    font-size: 16px;
+    line-height: 20px;
 
+}
+
+/* Large banner image styling begins here. */
 .banner {
     background-image: url("./images/bannerimg3.jpg");
     width:100%;
@@ -26,17 +33,16 @@ body {
     right:80px;
 }
 
-p {
-    color:darkslategrey;
-    font-size: 16px;
-    line-height: 20px;
-
-}
-
+/* Header and navigation styling begins here. */
 header {
     position:static;
     background-color:#2b2e35;
-    height: 90px;
+    height: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 header h1 {
@@ -45,37 +51,36 @@ header h1 {
     font-size:50px;
     padding:0px 10px 0px 75px;
     display:inline;
-    position:relative;
-    top:15px;
+    width:400px;
+    height:50px;
+    margin-top:25px;
 }
 
 header nav{
-    position:relative;
-    bottom:32px;
-    right: 75px;
     display:flex;
     justify-content: flex-end;
-    color:#88c5c7;
-    font-size:20px;
-} 
+    margin-right:75px;
 
+} 
 
 .link {
     padding:5px 10px 5px 10px;
-    color:#88c5c7;
     border-bottom: 3px solid #88c5c7;
-    margin-right:8px;
+    margin-right:10px;
     text-decoration: none;
- 
+    color:#88c5c7;
+    font-size:20px;
+    height:25px;
+    margin-top:30px;
 }
 
 .link:hover {
     background-color:#88c5c7;
     color:#2b2e35;  
-   transition: all 0.25s ease-in;
+    transition: 0.25s ease-in;
 }
 
-
+/* Main container styling begins here. */
 main {
     margin: 75px;
 }
@@ -87,36 +92,224 @@ section {
 
 }
 
+/* Main container headers and corresponding content sections styling begins here. */
 .content-header {
     position:relative;
     bottom:50px;
-    width: 20%;
-    font-size:50px;
+    width: 15%;
+    font-size:45px;
     font-weight: bolder;
     text-align:right;
     margin-right: 20px;
+    width:400px;
 }
 
 .content {
-    width:80%;
-    border-left: 3px solid #3c4f6a; 
+    position:relative;
+    width:100%;
+    border-left: 4px solid #3c4f6a; 
     padding-left:50px;
-
-
-}
-
-.projects {
-    width:300px;
-    height:200px;
-    border: 5px solid #88c5c7;
-    background-image: url(https://via.placeholder.com/300x200);
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin:5px;
+    flex-wrap: wrap;
+    margin:0;
+}
 
+/* 'Work'/Projects section and images styling begins here. */
+.projects {
+    position:relative;
+    flex: 3 1 400px;
+    height:175px;
+    border: 5px solid #88c5c7;
+    margin:5px;
+    width:50%;
 }
 
 
+/* .projects img {
+    display:flex;
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position: center;
+} */
 
-@media 
+/* .projects img:hover {
+    opacity:0.5;
+    background-color:red;
+} */
+
+/* #larger img { 
+    display:flex;
+    background-size:cover;
+    background-position: center;
+} */
+
+/* Project title and description overlay styling begins here. */
+.project-info {
+    display:inline-block;
+    position:relative;
+    top:80px;
+    background-color:#88c5c7;
+    padding:10px 10px 0px 5px;
+    margin:0px;
+}
+
+.project-info h5 {
+    font-size: 20px;
+    line-height: 18px;
+    margin:0px;
+}
+
+.project-info p {
+    font-size:12px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+/* First/larger project image styling begins here. */
+#larger {
+    flex:3 1 1200px;
+    width:100%;
+    height:350px;
+    border: 5px solid #88c5c7;
+    margin:5px;
+}
+
+#one {
+    top:255px;
+}
+
+/* Contact Me header and corresponding section styling begins here. */
+#contact-me {
+    position:relative;
+    width:100%;
+    height:100%;
+    border-left: 4px solid #3c4f6a; 
+    padding-left:50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0;
+}
+
+.content h4 {
+    color: #2b2e35;
+    font-size:24px;
+    line-height:25px;
+    border-bottom: 4px solid #3c4f6a;
+    padding: 0px 5px 15px 5px;
+}
+
+
+/* Responsive styling begins here. */
+@media screen and (max-width: 795px){
+
+section {
+    display:block;
+    width:100%;;
+}
+
+.content-header {
+    position:relative;
+    font-size:45px;
+    font-weight: bolder;
+    text-align:left;
+    width:100%;
+    display:inline-block;
+    margin:0px;
+    height:100px;
+ }
+    
+.content {
+    width:100%;
+    border-left: 0px; 
+    border-top: 4px solid #3c4f6a; 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:10px;
+    }
+
+#larger {
+    height:175px;
+}
+
+#one {
+    top:80px;
+}
+
+#contact-me {
+    position:relative;
+    width:100%;
+    border-left: 0px solid #3c4f6a; 
+    padding-left:0px;
+    display:block;
+    margin:0px;
+    text-align:center;
+    }
+
+.content h4 {
+    color: #2b2e35;
+    font-size:24px;
+    line-height:25px;
+    border-bottom: 4px solid #3c4f6a;
+    border-width:50%;
+    padding: 0px 5px 15px 5px;
+    height: 15px;
+    text-align:center;
+    display:inline-block;
+    }
+}
+
+@media screen and (max-width:995px){
+
+header {
+        position:static;
+        background-color:#2b2e35;
+        height: 125px;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    
+    header h1 {
+        color:#2b2e35;
+        background-color:#88c5c7;
+        font-size:50px;
+        text-align:center;
+        padding:0px 10px 0px 10px;
+        height:50px;
+        width:100%;
+        margin:0px;
+    }
+    
+    header nav{
+        display:flex;
+        justify-content: space-between; 
+        width:100%;
+        margin-right:0px;
+        margin-left:8px;
+    } 
+
+    .link {
+        padding:5px 10px 5px 10px;
+        text-decoration: none;
+        color:#88c5c7;
+        font-size:20px;
+        height:20px;
+        margin-top:0px;
+    }
+    
+ .banner h2 {
+        color:#2b2e35;
+        background-color:#88c5c7;
+        font-size:30px;
+        padding:5px 10px 5px 10px;
+        top:175px;
+        align-items:center;
+    }
+}
