@@ -125,36 +125,68 @@ section {
     width:50%;
 }
 
-
-/* .projects img {
-    display:flex;
-    height:100%;
+.project {
     width:100%;
-    background-size:cover;
+    height: 175px;
+    background-size: cover;
     background-position: center;
-} */
 
-/* .projects img:hover {
+}
+
+.project:hover {
     opacity:0.5;
-    background-color:red;
-} */
+    transition: 0.2s ease-in;
+}
 
-/* #larger img { 
-    display:flex;
-    background-size:cover;
-    background-position: center;
-} */
+/* First/larger project image styling begins here. */
+
+
+#larger {
+    flex:3 1 100%;
+    width:100%;
+    height:350px;
+    border: 5px solid #88c5c7;
+    margin:5px;
+}
+
+#first {
+    height: 350px;
+}
+
+#one {
+    top:255px;
+}
+
+/* Image sources begin here */
+.img1{
+    background-image:url(./images/surfing.jpg);   
+}
+
+.img2 {
+    background-image:url(./images/led.jpg);
+}
+
+.img3 {
+    background-image:url(./images/calc.jpg);
+}
+
+.img4 {
+    background-image:url(./images/puzzle.jpg);
+}
+
+.img5 {
+    background-image:url(./images/run.jpg);
+}
 
 /* Project title and description overlay styling begins here. */
 .project-info {
     display:inline-block;
-    position:relative;
+    position:absolute;
     top:80px;
     background-color:#88c5c7;
     padding:10px 10px 0px 5px;
     margin:0px;
 }
-
 .project-info h5 {
     font-size: 20px;
     line-height: 18px;
@@ -167,18 +199,7 @@ section {
     font-weight: bold;
 }
 
-/* First/larger project image styling begins here. */
-#larger {
-    flex:3 1 1200px;
-    width:100%;
-    height:350px;
-    border: 5px solid #88c5c7;
-    margin:5px;
-}
 
-#one {
-    top:255px;
-}
 
 /* Contact Me header and corresponding section styling begins here. */
 #contact-me {
@@ -235,7 +256,9 @@ section {
 #larger {
     height:175px;
 }
-
+#first {
+    height: 175px;
+}
 #one {
     top:80px;
 }
@@ -263,53 +286,73 @@ section {
     }
 }
 
+.banner {
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.banner h2 {
+    color:#2b2e35;
+    background-color:#88c5c7;
+    font-size:30px;
+    padding:5px 10px 5px 10px;
+    top:175px;
+ 
+    }
+
 @media screen and (max-width:995px){
 
 header {
-        position:static;
-        background-color:#2b2e35;
-        height: 125px;
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+    position:static;
+    background-color:#2b2e35;
+    height: 125px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
     
-    }
+header h1 {
+    color:#2b2e35;
+    background-color:#88c5c7;
+    font-size:50px;
+    text-align:center;
+    padding:0px 10px 0px 10px;
+    height:50px;
+    width:100%;
+    margin:0px;
+}
     
-    header h1 {
-        color:#2b2e35;
-        background-color:#88c5c7;
-        font-size:50px;
-        text-align:center;
-        padding:0px 10px 0px 10px;
-        height:50px;
-        width:100%;
-        margin:0px;
-    }
-    
-    header nav{
-        display:flex;
-        justify-content: space-between; 
-        width:100%;
-        margin-right:0px;
-        margin-left:8px;
-    } 
+header nav{
+    display:flex;
+    justify-content: space-between; 
+    width:100%;
+    margin-right:0px;
+    margin-left:8px;
+} 
 
-    .link {
-        padding:5px 10px 5px 10px;
-        text-decoration: none;
-        color:#88c5c7;
-        font-size:20px;
-        height:20px;
-        margin-top:0px;
-    }
+.link {
+    padding:5px 10px 5px 10px;
+    text-decoration: none;
+    color:#88c5c7;
+    font-size:20px;
+    height:20px;
+    margin-top:0px;
+}
     
- .banner h2 {
-        color:#2b2e35;
-        background-color:#88c5c7;
-        font-size:30px;
-        padding:5px 10px 5px 10px;
-        top:175px;
-        align-items:center;
-    }
+.banner {
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.banner h2 {
+    color:#2b2e35;
+    background-color:#88c5c7;
+    font-size:30px;
+    padding:5px 10px 5px 10px;
+    top:175px;
+ }
+
 }
